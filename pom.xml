@@ -17,7 +17,6 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<start-class>com.crizillion.springer.DemoApplication</start-class>
 	</properties>
 
 	<dependencies>
@@ -38,10 +37,8 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<classifier>exec</classifier>
-				</configuration>
 			</plugin>
+			<!-- maven failsafe plugin is added to make the travis build work -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
